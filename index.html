@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="success-message" class="success-message" aria-live="polite"></div>
+
+
+  <div class="main">
+    <form action="" class="form" id="form">
+      <h2>Contact Us</h2>
+
+      <div class="form__content">
+
+        <div class="form__group">
+          <div class="form__group-input">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName">
+            <span class="error-message" id="firstname-error" role="alert"></span>
+          </div>
+
+          <div class="form__group-input">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName">
+            <span class="error-message" id="lastname-error" role="alert"></span>
+          </div>
+
+        </div>
+
+        <div class="form__group-input form__email">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email">
+          <span class="error-message" id="email-error" role="alert"></span>
+        </div>
+
+        <div class="form__group" id="query-type">
+          <div class="form__group-input">
+            <span>Query Type *</span>
+            <div class="radio-image" id="radio-general">
+              <input type="radio" name="query" id="general-enquiry">
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
+          </div>
+
+          <div class="form__group-input">
+            <div class="radio-image" id="radio-support">
+              <input type="radio" name="query" id="support-request">
+              <label for="support-request">Support Request</label>
+            </div>
+          </div>
+
+        </div>
+        <span class="error-message query__error" id="query-error" role="alert"></span>
+
+        <div class="form__group-input form__message">
+          <label for="message">Message *</label>
+          <textarea name="message" id="message" cols="15" rows="6"></textarea>
+          <span class="error-message" id="message-error" role="alert"></span>
+        </div>
+      </div>
+
+      <div class="form__concent">
+        <div class="form__concent-detail">
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <label for="checkbox">I consent to being contacted by the team *</label>
+        </div>
+        <span class="error-message query__error" id="checkbox-error" role="alert"></span>
+      </div>
+
+      <div class="form__btn">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Collins Paul</a>.
+  </div>
+
+</body>
+</html>
